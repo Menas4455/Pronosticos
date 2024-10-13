@@ -1,1 +1,1 @@
-export const TOKEN_SECRECT = 'token secreto de la NASA';
+export const TOKEN_SECRECT = 'token secreto de la NASA'; 
