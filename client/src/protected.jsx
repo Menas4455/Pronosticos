@@ -6,7 +6,7 @@ export function Protected (){
 
     if(loading) return <h1>Loading...</h1>;
 
-    if(!loading && !isAuth){ return <Navigate to='/home' replace />}
+    if(!loading && !isAuth){ return <Navigate to='/' replace />}
 
     return( <Outlet/>)
 }

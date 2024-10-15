@@ -46,13 +46,13 @@ export const FormForecast = () => {
             {okMessage && (<div className="text-green-700">{okMessage}</div>)}
             {errorMessage && (<div className="text-red-700">{errorMessage}</div>)} 
             <form onSubmit={onSubmit}>
-                <input type="text" {...register('title', { required: true })} />
+                <input className="text-zinc-950" type="text" {...register('title', { required: true })} />
                 {errors.title && (<div className="text-red-700">Título es requerido</div>)}
 
-                <textarea {...register('description', { required: true })}></textarea>
+                <textarea className="text-zinc-950" {...register('description', { required: true })}></textarea>
                 {errors.description && (<div className="text-red-700">Descripción es requerida</div>)}
 
-                <button type="submit">registrar pronóstico</button>
+                <button className="bg-white" type="submit">registrar pronóstico</button>
             </form>
         </div>
     );

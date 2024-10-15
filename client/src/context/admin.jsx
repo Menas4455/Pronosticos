@@ -30,7 +30,7 @@ export const AdminProvider = ({ children }) => {
                 setIsAuth(true);
                 setErrors([]);
                 setLoading(false);
-                navigate('/home');
+                navigate('/');
             }
         } catch (error) {
             console.error("Error al iniciar sesión:", error.response.data || error.message);

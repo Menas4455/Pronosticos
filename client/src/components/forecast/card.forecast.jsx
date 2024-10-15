@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export const CardForecast = ({forecast, key})=>{
+export const CardForecast = ({forecast})=>{
    
 return(
     <div>
